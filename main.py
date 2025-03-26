@@ -1,7 +1,6 @@
 from fastapi import FastAPI, WebSocket
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
 
 app=FastAPI()
 
@@ -111,4 +110,3 @@ async def websocket_endpoint(websocket: WebSocket, client_name: str):
 
 
 
-uvicorn.run(app)
